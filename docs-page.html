@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Documentation | Clovar</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Bootstrap 4 Template For Software Startups"
+    />
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+
+    <!-- Plugins CSS -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/plugins/simplelightbox/simple-lightbox.min.css"
+    />
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css" />
+    <style>
+      .btn-primary {
+        background-color: #50409a;
+      }
+
+      .docs-nav .nav-item.active .nav-link:before {
+        background: #e69c2e;
+      }
+
+      .theme-icon-holder {
+        color: #e69c2e;
+      }
+
+      .docs-nav .nav-item.active .nav-link {
+        color: #e69c2e;
+      }
+
+      .docs-nav .nav-item.active .nav-link .theme-icon-holder {
+        color: #e69c2e;
+        background: #f4fcf6;
+      }
+
+      .docs-nav .nav-link.active {
+        color: #5d6778;
+      }
+    </style>
+  </head>
+
+  <body class="docs-page">
+    <header class="header fixed-top">
+      <div class="branding docs-branding">
+        <div class="container-fluid position-relative py-2">
+          <div class="docs-logo-wrapper">
+            <button
+              id="docs-sidebar-toggler"
+              class="docs-sidebar-toggler docs-sidebar-visible me-4 d-xl-none"
+              type="button"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="site-logo">
+              <a class="navbar-brand" href="index.html"
+                ><img
+                  class="logo-icon me-2"
+                  src="assets/images/clovar-logo.png"
+                  alt="logo"
+                  width="130px"
+              /></a>
+            </div>
+          </div>
+          <!--//docs-logo-wrapper-->
+          <div
+            class="docs-top-utilities d-flex justify-content-end align-items-center"
+          >
+            <a
+              href="https://github.com/zuri-training/team-15_my-cms"
+              class="me-5 text-decoration-none d-none d-lg-flex"
+              ><i class="fab fa-github fa-fw me-2 pt-1"></i> Source Code</a
+            >
+            <a
+              href="https://clovarcms.herokuapp.com"
+              class="btn btn-primary d-none d-lg-flex"
+              >Return to Clovar</a
+            >
+          </div>
+          <!--//docs-top-utilities-->
+        </div>
+        <!--//container-->
+      </div>
+      <!--//branding-->
+    </header>
+    <!--//header-->
+
+    <div class="docs-wrapper">
+      <div id="docs-sidebar" class="docs-sidebar">
+        <div class="top-search-box d-lg-none p-3">
+          <form class="search-form">
+            <input
+              type="text"
+              placeholder="Search the docs..."
+              name="search"
+              class="form-control search-input"
+            />
+            <button type="submit" class="btn search-btn" value="Search">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <nav id="docs-nav" class="docs-nav navbar">
+          <ul class="section-items list-unstyled nav flex-column pb-3">
+            <li class="nav-item section-title">
+              <a class="nav-link scrollto active" href="#section-1"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-map-signs"></i></span
+                >Getting Started</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-1-1">Setting Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-1-2">Signing Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-1-3">Logging In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-1-4"
+                >Changing Password</a
+              >
+            </li>
+
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link scrollto" href="#section-2"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-pen-to-square"></i></span
+                >Working with Templates</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-2-1"
+                >Viewing Templates</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-2-2"
+                >Customizing a Template</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-2-3"
+                >Creating from Scratch</a
+              >
+            </li>
+
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link scrollto" href="#section-3"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-rocket"></i></span
+                >Saving and Deployment</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-3-1"
+                >Saving Your Finished Template</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-3-2"
+                >Deploying Your Saved Design</a
+              >
+            </li>
+
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link scrollto" href="#section-4"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-arrow-down"></i></span
+                >Running Locally</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-4-1"
+                >Cloning the Repository</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-4-2"
+                >Installing Dependencies</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-4-3">Final Steps</a>
+            </li>
+
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link scrollto" href="#section-8"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-book-reader"></i></span
+                >Resources</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-8-1">GrapeJS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-8-2">django-cms</a>
+            </li>
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link scrollto" href="#section-9"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-lightbulb"></i></span
+                >FAQs</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-9-1">FAQ 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-9-2">FAQ 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-9-3">FAQ 3</a>
+            </li>
+          </ul>
+        </nav>
+        <!--//docs-nav-->
+      </div>
+      <!--//docs-sidebar-->
+      <div class="docs-content">
+        <div class="container">
+          <article class="docs-article" id="section-1">
+            <header class="docs-header">
+              <h1 class="docs-heading">Getting Started</h1>
+              <section class="docs-intro">
+                <p>
+                  Clovar is an open source software that allows users to create
+                  and manage their own blog websites.
+                </p>
+                <p>
+                  This documentation is a guide to help you get started with
+                  navigating through Clovar and getting the most out of it's
+                  features.
+                </p>
+                <p>
+                  If you're an absolute beginner looking for some help getting
+                  started, or if you're a seasoned developer looking for some
+                  tips on how to use Clovar, this is the place to start.
+                </p>
+                <p>
+                  Let's take a step-by-step tour of Clovar and get you started
+                  with the basics.
+                </p>
+                <div class="simplelightbox-gallery row mb-3">
+                  <div class="col-12 col-md-4 mb-3">
+                    <a href="assets/images/landing-page.png"
+                      ><img
+                        class="figure-img img-fluid shadow rounded"
+                        src="assets/images/landing-page.png"
+                        alt=""
+                        title="Clovar Home Page"
+                    /></a>
+                  </div>
+                </div>
+              </section>
+              <!--//docs-intro-->
+            </header>
+            <section class="docs-section" id="item-1-1">
+              <h2 class="section-heading">Setting Up</h2>
+              <!-- Description on new user -->
+              <p>
+                When you want to get started with Clovar, you'll need to select
+                if you are new to blogging, you already have a blog site or you
+                already blog on different social media platforms.
+              </p>
+              <p>This will help us improve your experience with Clovar.</p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-4 mb-3">
+                  <a href="assets/images/user-description.png"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/user-description.png"
+                      alt="Pick a user description"
+                      title="User Description Page"
+                  /></a>
+                </div>
+              </div>
+
+              <!-- Pick a niche -->
+              <p>
+                Next, you will have to select the niche that best fits your
+                needs.
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-4 mb-3">
+                  <a href="assets/images/pick-niche.png"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/pick-niche.png"
+                      alt="Pick a Niche Page"
+                      title="Pick a niche page"
+                  /></a>
+                </div>
+              </div>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-1-2">
+              <h2 class="section-heading">Signing Up</h2>
+              <!-- Sign Up -->
+              <p>
+                After you have selected your niche, you will be taken to the
+                sign up page.
+              </p>
+              <p>
+                On the sign up page, you have the option of signing up with your
+                username and email, or directly with your google account, if you
+                have one.
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-4 mb-3">
+                  <a href="assets/images/sign-up.png"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/sign-up.png"
+                      alt="Sign up page"
+                      title="Sign Up Page"
+                  /></a>
+                </div>
+              </div>
+
+              <!-- Verification Email -->
+              <p>
+                After you have signed up, you will receive an email with a link
+                to verify your account.
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-4 mb-3">
+                  <a href="assets/images/sign-up.png"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/verification.png"
+                      alt="Email Verification Page"
+                      title="Email Verification Page"
+                  /></a>
+                </div>
+              </div>
+
+              <!-- Pick Template Page -->
+              <p>
+                The verification email will contain a link that will verify your
+                account and redirect you to the page to select templates.
+              </p>
+              <p>
+                The templates that will be available to you are based on the
+                niche you have selected.
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-4 mb-3">
+                  <a href="assets/images/pick-template.png"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/pick-template.png"
+                      alt="Select Template Page"
+                      title="Select Template Page"
+                  /></a>
+                </div>
+              </div>
+              <!-- add alink to id="section-2" -->
+              <a
+                href="
+                #section-2"
+                class="text-danger text-decoration-none"
+              >
+                Go to Templates Editing Section
+              </a>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-1-3">
+              <h2 class="section-heading">Logging In</h2>
+              <p>
+                If you're signed out of your account and you want to login, you
+                can click on the login button on the home page and it will take
+                you to the login page.
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-4 mb-3">
+                  <a href="assets/images/login.png"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/login.png"
+                      alt="Login Page"
+                      title="Login Page"
+                  /></a>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                  <a href="assets/images/landing-page.png"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/landing-page.png"
+                      alt=""
+                      title="Clovar Home Page"
+                  /></a>
+                </div>
+              </div>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-1-4">
+              <h2 class="section-heading">Changing Password</h2>
+              <p>
+                If you forgot your password, you can click on
+                <span class="text-danger"> forgot password </span> on the login
+                page and it will take you to the forgot password page. The
+                forgot password text is not in the picture above, but it is on
+                the page.
+              </p>
+              <p>
+                You will be taken to a page where you will be required to input
+                your registered email. The link to reset your password will be
+                sent to your registered mail.
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-4 mb-3">
+                  <a href="assets/images/password-reset.png"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/password-reset.png"
+                      alt="Password Reset Page"
+                      title="Password Reset Page"
+                  /></a>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                  <a href="assets/images/password-reset-sent.png"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/password-reset-sent.png"
+                      alt="Password Reset Email Sent"
+                      title="Password Reset Email Sent"
+                  /></a>
+                </div>
+              </div>
+
+              <p>
+                When you click on the link in the password reset email, it takes
+                you to a page where you are required to input your new password.
+                Afterwards, you're redirected to the login page where you can
+                login with your new password that's just been setup.
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-4 mb-3">
+                  <a href="assets/images/change-password.png"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/change-password.png"
+                      alt="Change Password Page"
+                      title="Change Password Page"
+                  /></a>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                  <a href="assets/images/password-changed.png"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/password-changed.png"
+                      alt="Password Changed"
+                      title="Password Changed"
+                  /></a>
+                </div>
+              </div>
+            </section>
+          </article>
+          <article class="docs-article" id="section-2">
+            <header class="docs-header">
+              <h1 class="docs-heading">Working with Templates</h1>
+              <section class="docs-intro">
+                <p>
+                  This section covers the basics of viewing, editing and saving
+                  templates.
+                </p>
+                <p>
+                  After you've signed up, you will be able to see all the
+                  templates that are available to you based on the niche you
+                  have selected in the previous step.
+                </p>
+                <div class="callout-block callout-block-info">
+                  <div class="content">
+                    <h4 class="callout-title">
+                      <span class="callout-icon-holder me-1">
+                        <i class="fas fa-info-circle"></i>
+                      </span>
+                      <!--//icon-holder-->
+                      Note
+                    </h4>
+                    <p>
+                      The features in this section are still in development.
+                    </p>
+                  </div>
+                  <!--//content-->
+                </div>
+                <!--//callout-block-->
+              </section>
+              <!--//docs-intro-->
+            </header>
+            <section class="docs-section" id="item-2-1">
+              <h2 class="section-heading">Viewing Templates</h2>
+              <p>
+                When you hover on a template, you will see the option to either
+                view the template or customize the template.
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-4 mb-3">
+                  <a href="assets/images/pick-template.png"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/pick-template.png"
+                      alt="Select Template Page"
+                      title="Select Template Page"
+                  /></a>
+                </div>
+              </div>
+              <p>
+                If you click on the view button, you will be able to see a
+                preview of the template. <br />
+                Below is an art template preview.
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-4 mb-3">
+                  <a href="assets/images/art-template.png"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/art-template.png"
+                      alt="Art Template"
+                      title="Art Template"
+                  /></a>
+                </div>
+              </div>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-2-2">
+              <h2 class="section-heading">Customizing a Template</h2>
+              <p>
+                In the previous step, if you clicked on customize instead of
+                view, you will be taken to a page where you will be able to
+                customize the template. <br />
+                You will see different panels by the right and left of the page
+                that you can use to customize the template.
+              </p>
+              <p>
+                Below is a sample of what the customization page looks like.
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-4 mb-3">
+                  <a href="assets/images/forge-template.png"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/forge-template.png"
+                      alt="Template Customization Page Sample"
+                      title="Template Customization Page Sample"
+                  /></a>
+                  <small>&copy; Forge</small>
+                </div>
+              </div>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-2-3">
+              <h2 class="section-heading">Creating from Scratch</h2>
+              <p>
+                In the page to select templates, there's an option to select a
+                blank page where you can create your own design from scratch and
+                save it.
+              </p>
+              <p>
+                Below is how a blank page looks. <br />
+                You have the option to add text, images, and so on to your page.
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-4 mb-3">
+                  <a href="assets/images/blank-template.png"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/blank-template.png"
+                      alt="Blank Template"
+                      title="Blank Template"
+                  /></a>
+                  <small>&copy; Forge</small>
+                </div>
+              </div>
+            </section>
+            <!--//section-->
+          </article>
+          <!--//docs-article-->
+
+          <article class="docs-article" id="section-3">
+            <header class="docs-header">
+              <h1 class="docs-heading">Saving and Deployment</h1>
+              <section class="docs-intro">
+                <p>
+                  This section covers the basics of saving and deploying your
+                  finished site.
+                </p>
+              </section>
+              <!--//docs-intro-->
+            </header>
+            <section class="docs-section" id="item-3-1">
+              <h2 class="section-heading">Saving Your Finished Template</h2>
+              <div class="callout-block callout-block-warning">
+                <div class="content">
+                  <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                      <i class="fas fa-bullhorn"></i>
+                    </span>
+                    <!--//icon-holder-->
+                  </h4>
+                  <p>Feature unavailable and will be available soon.</p>
+                </div>
+                <!--//content-->
+              </div>
+              <!--//callout-block-->
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-3-2">
+              <h2 class="section-heading">Deploying Your Saved Design</h2>
+              <div class="callout-block callout-block-warning">
+                <div class="content">
+                  <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                      <i class="fas fa-bullhorn"></i>
+                    </span>
+                    <!--//icon-holder-->
+                  </h4>
+                  <p>Feature unavailable and will be available soon.</p>
+                </div>
+                <!--//content-->
+              </div>
+              <!--//callout-block-->
+            </section>
+            <!--//section-->
+          </article>
+          <!--//docs-article-->
+
+          <article class="docs-article" id="section-4">
+            <header class="docs-header">
+              <h1 class="docs-heading">Running Locally</h1>
+              <section class="docs-intro">
+                <p>
+                  This app is open source, and the code is
+                  <a
+                    href="https://github.com/zuri-training/team-15_my-cms"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-danger text-decoration-none"
+                    >available on GitHub</a
+                  >.
+                </p>
+              </section>
+              <!--//docs-intro-->
+            </header>
+            <section class="docs-section" id="item-4-1">
+              <h2 class="section-heading">Cloning the Repository</h2>
+              <p>
+                The first step to running the app locally is to clone the
+                repository from GitHub, so you can have a local copy of the app.
+              </p>
+              <p>
+                Run the following command in your terminal to clone the
+                repository:
+              </p>
+              <div>
+                <pre>
+                  <code class="language-bash hljs">
+  git clone https://github.com/zuri-training/team-15_my-cms.git
+                  </code>
+                </pre>
+              </div>
+
+              <p>Switch your working directory to the cloned repository:</p>
+              <div>
+                <pre>
+                  <code class="language-bash">
+  cd team-15_my-cms
+                  </code>
+                </pre>
+              </div>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-4-2">
+              <h2 class="section-heading">Installing Dependencies</h2>
+              <div class="callout-block callout-block-info">
+                <div class="content">
+                  <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                      <i class="fas fa-info-circle"></i>
+                    </span>
+                    <!--//icon-holder-->
+                    Note
+                  </h4>
+                  <p>
+                    <code
+                      ><a
+                        href="https://pypi.org/project/pipenv/"
+                        class="text-danger text-decoration-none"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Pipenv</a
+                      ></code
+                    >
+                    is the preferred tool for creating and managing virtual
+                    environments for this project.
+                  </p>
+                </div>
+                <!--//content-->
+              </div>
+              <!--//callout-block-->
+              <p>
+                Dependencies need to be installed before the app can be
+                successfully run. <br />
+                We will be using <code>pipenv</code> to install dependencies.
+              </p>
+              <p>
+                <code>Pipenv</code> uses a single command to create a virtual
+                environment for you to work in and install all of the
+                dependencies you need.
+              </p>
+              <p>
+                Run the following command in your terminal to create a virtual
+                environment and install dependencies:
+              </p>
+              <div>
+                <pre>
+                  <code class="language-bash">
+  pipenv install
+                  </code>
+                </pre>
+              </div>
+              <p>
+                Activate the virtual environment by running the following
+                command:
+              </p>
+              <div>
+                <pre>
+                  <code class="language-bash">
+  pipenv shell
+                  </code>
+                </pre>
+              </div>
+              <p>
+                <code>pipenv</code> will now be available as a command in your
+                terminal.
+              </p>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-4-3">
+              <h2 class="section-heading">Final Steps</h2>
+              <p>
+                Create a <code>.env</code> file in the same directory as the
+                <code>settings.py</code> (config folder) with the following
+                variable(s):
+              </p>
+              <div>
+                <pre>
+                  <code class="language-bash">
+  SECRET_KEY=your-generated-secret-key
+                  </code>
+                </pre>
+              </div>
+              <div class="callout-block callout-block-warning">
+                <div class="content">
+                  <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                      <i class="fas fa-bullhorn"></i>
+                    </span>
+                    <!--//icon-holder-->
+                    Warning
+                  </h4>
+                  <p>Do not enclose the secret key in quotes.</p>
+                </div>
+                <!--//content-->
+              </div>
+              <!--//callout-block-->
+              <p>
+                <code>SECRET_KEY</code> is a secret key that is used to generate
+                cryptographic hashes for your app. It's a long, random-like
+                string.
+              </p>
+              <p>
+                You can generate a secret key easily at
+                <a
+                  href="https://djecrety.ir/"
+                  class="text-danger text-decoration-none"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Djecrety.ir</a
+                >
+              </p>
+
+              <p>Next, run the following command to run the migrations:</p>
+              <div>
+                <pre>
+                  <code class="language-bash">
+  python manage.py migrate
+                  </code>
+                </pre>
+              </div>
+              <p>
+                This will create a database called
+                <code>team-15_my-cms</code> in the
+                <code>team-15_my-cms</code> database on your local machine.
+              </p>
+              <p>Finally, run the following command to start your server:</p>
+              <div>
+                <pre>
+                    <code class="language-bash">
+  python manage.py runserver
+                    </code>
+                  </pre>
+              </div>
+              <p>
+                You can now access your app at
+                <a
+                  href="http://localhost:8000"
+                  class="text-danger text-decoration-none"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >http://localhost:8000</a
+                >
+              </p>
+            </section>
+            <!--//section-->
+          </article>
+          <!--//docs-article-->
+
+          <article class="docs-article" id="section-8">
+            <header class="docs-header">
+              <h1 class="docs-heading">Resources</h1>
+              <section class="docs-intro">
+                <p>
+                  Useful resources developers can study to better understand how
+                  this project works.
+                </p>
+              </section>
+              <!--//docs-intro-->
+            </header>
+            <section class="docs-section" id="item-8-1">
+              <h2 class="section-heading">GrapeJS</h2>
+              <p>
+                GrapesJS is an open-source, multi-purpose, Web Builder Framework
+                which combines different tools and features with the goal to
+                help you (or users of your application) to build HTML templates
+                without any knowledge of coding.
+              </p>
+              <p>
+                It's a perfect solution to replace the common WYSIWYG editors,
+                which are good for content editing but inappropriate for
+                creating HTML structures. You can see it in action with the
+                <a
+                  href="https://grapesjs.com/##"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-danger text-decoration-none"
+                  >official demos</a
+                >, but using its
+                <a
+                  href="https://github.com/artf/grapesjs/wiki/API-Reference"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-danger text-decoration-none"
+                  >API</a
+                >
+                you're able to build your own editors.
+              </p>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-8-2">
+              <h2 class="section-heading">django-cms</h2>
+              <p>
+                django CMS was originally conceived by web developers frustrated
+                with the technical and security limitations of other systems.
+                Its lightweight core makes it easy to integrate with other
+                software and put to use immediately, while its ease of use makes
+                it the go-to choice for content managers, content editors and
+                website admins.
+              </p>
+              <h5>For the Developer</h5>
+              <p>
+                Developers can integrate other existing Django applications
+                rapidly, or build brand new compatible apps that take advantage
+                of django CMS's publishing and editing features.
+              </p>
+              <h5>For the Content Editor</h5>
+              <p>
+                django CMS is user friendly and has a very intuitive drag and
+                drop interface. It's built around the needs of multi-lingual
+                publishing by default, not as an afterthought: all websites,
+                pages and content can exist in multiple language versions.
+              </p>
+              <p>
+                More details at <a href="https://www.django-cms.org/en/" target="_blank" rel="noopener noreferrer" class="text-danger text-decoration-none">django-cms.org/en/</a>.
+              </p>
+            </section>
+            <!--//section-->
+          </article>
+          <!--//docs-article-->
+
+          <article class="docs-article" id="section-9">
+            <header class="docs-header">
+              <h1 class="docs-heading">FAQs</h1>
+              <section class="docs-intro">
+                <p>
+                  In this section, you will find answers to frequently asked
+                  questions about the app.
+                </p>
+              </section>
+              <!--//docs-intro-->
+            </header>
+            <section class="docs-section" id="item-9-1">
+              <h2 class="section-heading">FAQ 1</h2>
+              <h5 class="pt-3">
+                <i class="fas fa-question-circle me-1"></i>Do I need to be a
+                designer or developer to use Clovar?
+              </h5>
+              <p>
+                No, you don't need to be a designer or developer to use Clovar.
+                You can use Clovar as a freelancer or as a full-time employee.
+              </p>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-9-2">
+              <h2 class="section-heading">FAQ 2</h2>
+              <h5 class="pt-3">
+                <i class="fas fa-question-circle me-1"></i>How do I change the
+                design of my site?
+              </h5>
+              <p>
+                On your dashboard, you'll have a list of your sites. Click on
+                the site you want to change the design of and you'll be able to
+                edit the design of your site.
+              </p>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-9-3">
+              <h2 class="section-heading">FAQ 3</h2>
+              <h5 class="pt-3">
+                <i class="fas fa-question-circle me-1"></i>How can I advertise
+                on my site?
+              </h5>
+              <p>
+                You can advertise on your blog by using our advertising
+                platform. You can find the different ways to do that in the
+                marketing and integrations secition in the dashboard.
+              </p>
+            </section>
+            <!--//section-->
+          </article>
+          <!--//docs-article-->
+
+          <footer class="footer">
+            <div class="container text-center py-5">
+              <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+              <small class="copyright"
+                >Designed with <span class="sr-only">love</span
+                ><i class="fas fa-heart" style="color: #fb866a"></i> by
+                <a
+                  class="theme-link"
+                  href="http://themes.3rdwavemedia.com"
+                  target="_blank"
+                  >Xiaoying Riley</a
+                >
+                for developers</small
+              >
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <!--//docs-wrapper-->
+
+    <!-- Javascript -->
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Page Specific JS -->
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script>
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+    <script src="assets/js/docs.js"></script>
+  </body>
+</html>
